@@ -18,6 +18,9 @@ importers:
       '@chromatic-com/storybook':
         specifier: 1.6.1
         version: 1.6.1(react@18.3.1)
+      '@fontsource/noto-sans-kr':
+        specifier: ^5.0.19
+        version: 5.0.19
       '@storybook/addon-essentials':
         specifier: ^8.2.7
         version: 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))
@@ -898,6 +901,9 @@ packages:
   '@eslint/js@8.57.0':
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@fontsource/noto-sans-kr@5.0.19':
+    resolution: {integrity: sha512-YtEG66Upsu6xU75W9DaLW9aUenCqMwDzTuYnk4iDDOegqSFKGqGMCP3+W86eFbtsi3rRZtSwwl8Yq6NHnNKM/Q==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -4668,6 +4674,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.0': {}
+
+  '@fontsource/noto-sans-kr@5.0.19': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
