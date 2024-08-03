@@ -3,6 +3,7 @@ import ErrorMessage from "./ErrorMessage";
 import IconButton from "./IconButton";
 
 interface DefaultTextFieldProps {
+  id: string;
   placeholder: string;
   value: string;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
@@ -14,6 +15,7 @@ interface DefaultTextFieldProps {
 }
 
 export default function DefaultTextField({
+  id,
   value,
   errorMessage,
   iconPath,
@@ -26,13 +28,14 @@ export default function DefaultTextField({
   const [isFocused, setIsFocused] = useState(false);
   const borlderColor = isFocused ? "border-secondary" : value ? "border-primary" : "border-mono300";
   return (
-    <div>
+    <div className="text-field">
       <div
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
         className={`text-primary border-b ${borlderColor}`}
       >
         <input
+          id={id}
           type="text"
           className="outline-none"
           placeholder={placeholder}

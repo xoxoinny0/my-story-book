@@ -8,16 +8,9 @@ const meta = {
   parameters: { layout: "centered" },
   tags: ["autodocs"],
   argTypes: {
-    iconAlt: {
+    id: {
       control: "text",
-      description: "아이콘 이미지의 alt 속성",
-      table: {
-        defaultValue: { summary: "icon" },
-      },
-    },
-    iconPath: {
-      control: "text",
-      description: "아이콘 이미지의 경로",
+      description: "텍스트 필드의 ID",
       table: {
         defaultValue: { summary: "" },
       },
@@ -52,8 +45,23 @@ const meta = {
     },
     onChange: { action: "changed", description: "텍스트 필드 값 변경 이벤트" },
     onIconClick: { action: "clicked", description: "버튼 클릭 이벤트" },
+    iconAlt: {
+      control: "text",
+      description: "아이콘 이미지의 alt 속성",
+      table: {
+        defaultValue: { summary: "icon" },
+      },
+    },
+    iconPath: {
+      control: "text",
+      description: "아이콘 이미지의 경로",
+      table: {
+        defaultValue: { summary: "" },
+      },
+    },
   },
   args: {
+    id: "email",
     iconAlt: "icon",
     iconPath: "/vite.svg",
     placeholder: "텍스트를 입력해주세요",
