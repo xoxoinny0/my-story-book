@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DefaultTextField from "./components/DefaultTextField";
 import Label from "./components/Label";
+import TagList from "./components/TagList";
 
 export default function App() {
   const [error, setError] = useState(false);
@@ -22,6 +23,10 @@ export default function App() {
       />
       <div className="mb-4" />
       <button onClick={() => setError(!error)}>Toggle Error</button>
+
+      <div className="bg-primary w-screen h-screen">
+        <TagList tagList={["React", "Vue", "JQuery"]} onTagChange={console.log} />
+      </div>
     </div>
   );
 }
